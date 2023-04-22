@@ -1,0 +1,15 @@
+image-viewer: feh, sxiv
+wallpaper: xwallpaper
+video-player: mpv
+terminal: st
+screenshot-utility: xclip, scrot
+font: ttf-jetbrains-mono
+text-editor: vim, nvim
+browser: chromium, firefox
+terminal-multiplexer: screen, tmux
+compositor: picom
+shell: zsh
+terminal-calculator: insect
+flex: tty-clock, cava
+system-info: btop, neofetch, pfetch
+display-pressed-keys: screenkey
