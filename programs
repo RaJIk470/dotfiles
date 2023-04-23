@@ -13,3 +13,4 @@ terminal-calculator: insect
 flex: tty-clock, cava
 system-info: btop, neofetch, pfetch
 display-pressed-keys: screenkey
+space-util: ncdu
