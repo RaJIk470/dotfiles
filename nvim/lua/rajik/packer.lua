@@ -41,11 +41,33 @@ return require('packer').startup(function(use)
         config = function() require("nvim-autopairs").setup {} end
     }
 
+    use {
+        "windwp/nvim-ts-autotag",
+        config = function() require("nvim-ts-autotag").setup {} end
+    }
+
     use 'norcalli/nvim-colorizer.lua'
 
-    --use 'nvim-tree/nvim-tree.lua'
-    --use 'nvim-tree/nvim-web-devicons'
+    use 'nvim-tree/nvim-tree.lua'
+    use 'nvim-tree/nvim-web-devicons'
+    use 'vimwiki/vimwiki'
     --use 'neovim/nvim-lspconfig'
     --use 'mfussenegger/nvim-jdtls'
+    use {
+      "someone-stole-my-name/yaml-companion.nvim",
+      requires = {
+          { "neovim/nvim-lspconfig" },
+          { "nvim-lua/plenary.nvim" },
+          { "nvim-telescope/telescope.nvim" },
+      },
+      config = function()
+       require("telescope").load_extension("yaml_schema")
+      end,
+    }
+    use "tpope/vim-surround"
+    use "tpope/vim-repeat"
+    use "mattn/emmet-vim"
+    use('jose-elias-alvarez/null-ls.nvim')
+    use('MunifTanjim/prettier.nvim')
 
 end)
